@@ -1,4 +1,4 @@
-package com.example.ch11_4_1
+package com.example.a11_4_1
 
 import android.os.Bundle
 import android.util.Log
@@ -27,7 +27,10 @@ class MainActivity : AppCompatActivity() {
 
         val adapter = MyAdapter(datas)
         binding.recyclerView.adapter = adapter
-        binding.recyclerView.addItemDecoration(DividerItemDecoration(this,GridLayoutManager.HORIZONTAL))
+        binding.recyclerView.addItemDecoration(
+            DividerItemDecoration(this,
+                GridLayoutManager.HORIZONTAL)
+        )
         binding.addBtn.setOnClickListener{
             datas.add("new data")
             adapter.notifyDataSetChanged()
@@ -35,7 +38,7 @@ class MainActivity : AppCompatActivity() {
 
     }
 }
-class MyViewHolder(val binding: ItemMainBinding):RecyclerView.ViewHolder(binding.root)
+class MyViewHolder(val binding: ItemMainBinding): RecyclerView.ViewHolder(binding.root)
 
 class MyAdapter(val datas:MutableList<String>):
     RecyclerView.Adapter<RecyclerView.ViewHolder>(){

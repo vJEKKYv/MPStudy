@@ -23,3 +23,4 @@ rootProject.name = "MPStudy"
 include(":app")
 include(":ch11-4")
 include(":11-4-1")
+include(":11-4-2")
