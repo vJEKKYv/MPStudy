@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="BindService"
+        android:id="@+id/bind_service"/>
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="UbBindService"
+        android:id="@+id/unbind_service"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/result_text"
+        android:gravity="center"
+        android:text="result"/>
+
+</LinearLayout>
