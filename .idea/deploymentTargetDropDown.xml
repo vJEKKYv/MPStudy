@@ -53,6 +53,25 @@
       <entry key="15-3">
         <State />
       </entry>
+      <entry key="16-1">
+        <State />
+      </entry>
+      <entry key="16-2">
+        <State>
+          <targetSelectedWithDropDown>
+            <Target>
+              <type value="QUICK_BOOT_TARGET" />
+              <deviceKey>
+                <Key>
+                  <type value="VIRTUAL_DEVICE_PATH" />
+                  <value value="C:\Users\user\.android\avd\Pixel_2_API_34.avd" />
+                </Key>
+              </deviceKey>
+            </Target>
+          </targetSelectedWithDropDown>
+          <timeTargetWasSelectedWithDropDown value="2024-05-24T06:10:28.866138100Z" />
+        </State>
+      </entry>
       <entry key="app">
         <State />
       </entry>
