@@ -22,14 +22,14 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, "외부저장소 사용 가능", Toast.LENGTH_SHORT).show()
         else
             Toast.makeText(this, "외부저장소 사용 불가", Toast.LENGTH_SHORT).show()
-        // 외부 저장소에서 쓰려면 아래의 file을 대신 쓰면 된다.
         /*
-        val file = File(getExternalFilesDir(null), "test.txt")
+         * 내부 저장소에서 쓰기
+         * val file = File(filesDir, "test.txt")
+         * 외부 저장소에서 쓰기.
+         * val file = File(getExternalFilesDir(null), "test.txt")
          */
         binding.writeBtn.setOnClickListener {
-            // 내부 저장소에서 쓰기
             val file = File(filesDir, "test.txt")
-
             val writeStream:OutputStreamWriter = file.writer()
             writeStream.write("Hello World! ")
             writeStream.flush()
