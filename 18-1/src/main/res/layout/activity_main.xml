@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <Button
+        android:id="@+id/phone_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="폰 서비스 상황"/>
+
+    <Button
+        android:id="@+id/phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="폰 번호"/>
+
+    <Button
+        android:id="@+id/network_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="네트워크 상태"/>
+
+    <Button
+        android:id="@+id/network_request"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="폰 서비스 상황"/>
+
+    <TextView
+        android:id="@+id/result_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Result"
+        android:textSize="20dp"
+        android:textColor="#ff0000"
+        android:layout_margin="5dp"
+        android:gravity="center"/>
+</LinearLayout>
