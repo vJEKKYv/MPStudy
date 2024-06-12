@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/loadFromResource"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="리소스 이미지 출력하기"/>
+
+    <Button
+        android:id="@+id/loadFromGallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="갤러리 이미지 출력하기"/>
+
+    <Button
+        android:id="@+id/loadFromWeb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="웹 이미지 출력하기"/>
+
+    <Button
+        android:id="@+id/usingImageData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="이미지 데이터 사용하기"/>
+
+    <ImageView
+        android:id="@+id/resultImage"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scaleType="center"/>
+</LinearLayout>
